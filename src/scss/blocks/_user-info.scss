@@ -1,0 +1,73 @@
+.user-info {
+  padding-top: 44px;
+  padding-bottom: 32px;
+
+  background-color: $background-color-2;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px rgba(27, 35, 74, 0.15), 0px 4px 6px rgba(27, 35, 74, 0.06);
+
+  @include desktop {
+    padding-top: 27px;
+  }
+}
+
+.user-info__picture {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 61.5px;
+
+  @include desktop {
+    margin-bottom: 52.5px;
+  }
+}
+
+.user-info__img {
+  display: block;
+}
+
+.user-info__title {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.455;
+  color: $text-color-dark;
+  text-align: center;
+
+  @include desktop {
+    margin-bottom: 1.5rem;
+    font-size: 1.625rem;
+    line-height: 1.385;
+  }
+}
+
+.user-info__description {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  text-align: center;
+
+  @include desktop {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2.5rem;
+
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}
+
+.user-info__button {
+  margin-left: auto;
+  margin-right: auto;
+}

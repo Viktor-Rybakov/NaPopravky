@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>НаПоправку — Информация о пациентах</title>
+  <meta name="description" content="Test task for NaPopravky by Viktor Rybakov">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+  <main class="main">
+    <div class="main__container">
+      <h1 class="main__title">Информация о пациентах</h1>
+
+      <section class="user-info main__user-info">
+        <picture class="user-info__picture">
+          <source media="(min-width: 960px)"
+                  srcset="img/working_remotely_desktop.png 1x,
+                          img/working_remotely_desktop@2x.png 2x">
+          <img  class="user-info__img"
+                src="img/working_remotely.png"
+                srcset="img/working_remotely@2x.png 2x"
+                alt="Нарисованная сидящая девушка с ноутбуком на коленках">
+        </picture>
+
+        <h2 class="user-info__title">Заполните свой профиль и получите 100 баллов</h2>
+
+        <p class="user-info__description">Заполните базовую информацию о&nbsp;себе, чтобы мы&nbsp;могли подбирать для вас интересные акции и&nbsp;статьи. Информация о&nbsp;пациенте используется только для автозаполнения формы записи и&nbsp;не&nbsp;видна другим пользователям.</p>
+
+        <button class="button user-info__button" type="button" aria-label="Перейти к заполнению">
+          <span class="button__text">Перейти к заполнению</span>
+          <span class="button__icon">+100</span>
+        </button>
+      </section>
+
+    </div>
+  </main>
+  
+</body>
+</html>

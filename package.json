@@ -1,5 +1,5 @@
 {
-  "name": "diploma-project",
+  "name": "test-for-napopravky",
   "version": "1.0.0",
   "description": "Skillbox diploma project",
   "main": "index.js",
@@ -29,5 +29,13 @@
   ],
   "scripts": {
     "dev": "gulp dev"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viktor-Rybakov/NaPopravky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Viktor-Rybakov/NaPopravky/issues"
+  },
+  "homepage": "https://github.com/Viktor-Rybakov/NaPopravky#readme"
 }

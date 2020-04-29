@@ -1,0 +1,43 @@
+.main {
+  padding-top: 0.875rem;
+
+  @include desktop {
+    padding-top: 109px;
+  }
+
+}
+
+.main__container {
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    max-width: 600px;
+  }
+
+  @include desktop {
+    max-width: 846px;
+  }
+}
+
+.main__title {
+  margin: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.556;
+  color: $text-color-dark;
+
+  @include phone {
+    margin-left: 0;
+  }
+
+  @include desktop {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+}
