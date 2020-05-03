@@ -50,11 +50,14 @@
 }
 
 .modal__header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   min-height: 48px;
   margin-left: -1rem;
@@ -62,10 +65,15 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
+  background-color: $background-color-2;
   box-shadow:  0px 0px 1px rgba(27, 35, 74, 0.15),
                0px 4px 6px rgba(27, 35, 74, 0.06);
 
   @include tablet {
+    position: relative;
+    top: auto;
+    z-index: 0  ;
+
     justify-content: start;
 
     margin-left: 0;
