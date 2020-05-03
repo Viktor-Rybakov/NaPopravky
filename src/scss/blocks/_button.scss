@@ -1,6 +1,8 @@
 .button {
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-height: 48px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 19px;
@@ -10,19 +12,24 @@
   font-size: 0.8125rem;
   line-height: 1.231;
   color: $button-text-color;
+  text-align: center;
 
   background-color: $button-background-color;
   border: none;
   border-radius: 4px;
 
+  transition: 0.2s;
+
   cursor: pointer;
 
-  &:focus,
+  &:focus {
+    outline: none;
+    box-shadow:  0 0 0 2px #FFFFFF,
+                 0 0 0 4px $button-hover-border-color;
+  }
+
   &:hover {
     opacity: 0.8;
-
-    outline: none;
-    box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px $button-hover-border-color;
   }
 }
 

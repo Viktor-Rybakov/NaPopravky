@@ -1,0 +1,44 @@
+.radio {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  padding-left: 2em;
+  
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.429;
+  color: $text-color-dark;
+}
+
+.radio__box {
+  position: absolute;
+
+  display: block;
+  width: 1.429em;
+  height: 1.429em;
+  margin-left: -2em;
+
+  background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Crect x="1" y="1" width="18" height="18" rx="9" fill="%23F3F6FB" stroke="%23A0A8C5" stroke-width="2"/%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.radio__input:checked + .radio__box {
+  background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="20" height="20" rx="10" fill="%2340B3B7"/%3E%3Crect x="6" y="6" width="8" height="8" rx="4" fill="white"/%3E%3C/svg%3E');
+}
+
+.radio__input:focus + .radio__box {
+  outline: none;
+  box-shadow: 0 0 0 2px #FFFFFF,
+              0 0 0 4px $button-hover-border-color;
+}
+
+.radio__input:disabled + .radio__box,
+.radio__input:disabled ~ .radio__text {
+  opacity: 0.5;
+}

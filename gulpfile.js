@@ -53,7 +53,7 @@ function styles(){
 }
 
 function scripts(){
-  return src(jsFiles)
+  return src('./src/js/*.js')
     .pipe(concat('scripts.js'))
     // .pipe(uglify())
     .pipe(dest('./build/js'))
@@ -113,6 +113,7 @@ exports.dev = series(
   parallel(
     html,
     styles,
+    scripts,
     fonts,
     series (
       images,
